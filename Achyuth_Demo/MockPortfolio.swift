@@ -20,6 +20,7 @@ class MockPortfolioRepository: PortfolioRepositoryProtocol {
     }
 }
 
+
 class MockPortfolioUseCase: PortfolioUseCaseProtocol {
     var dataToReturn: ([HoldingViewModel], PortfolioSummary)!
     var shouldThrowError = false

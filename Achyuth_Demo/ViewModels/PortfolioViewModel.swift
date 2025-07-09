@@ -46,14 +46,18 @@ class PortfolioViewModel: PortfolioViewModelProtocol {
     
     func loadPortfolioData() async {
         isLoading = true
+        defer { isLoading = false }
         errorMessage = nil
         
         do {
             let (holdings, summary) = try await useCase.getPortfolioData()
             self.holdings = holdings
             self.portfolioSummary = summary
+            self.errorMessage = nil
         } catch {
-            self.errorMessage = error.localizedDescription
+            self.holdings = []
+            self.portfolioSummary = nil
+            self.errorMessage = "Failed to load portfolio"
         }
         
         isLoading = false

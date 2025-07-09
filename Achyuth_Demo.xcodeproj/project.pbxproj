@@ -38,14 +38,6 @@
 			);
 			target = D806084A2E1EC0430060E4D1 /* Achyuth_Demo */;
 		};
-		D80608C42E1EC53D0060E4D1 /* Exceptions for "Achyuth_Demo" folder in "Achyuth_DemoTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				PortfolioUseCaseTest.swift,
-				PortfolioViewModelTest.swift,
-			);
-			target = D80608602E1EC0450060E4D1 /* Achyuth_DemoTests */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -53,7 +45,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				D80608732E1EC0450060E4D1 /* Exceptions for "Achyuth_Demo" folder in "Achyuth_Demo" target */,
-				D80608C42E1EC53D0060E4D1 /* Exceptions for "Achyuth_Demo" folder in "Achyuth_DemoTests" target */,
 			);
 			path = Achyuth_Demo;
 			sourceTree = "<group>";
